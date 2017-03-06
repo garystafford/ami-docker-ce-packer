@@ -2,7 +2,7 @@
 
 # Install Docker CE Ubuntu AMI
 
-set -e
+# set -e
 
 sudo apt-get remove docker docker-engine
 

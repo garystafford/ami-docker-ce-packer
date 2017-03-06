@@ -3,8 +3,8 @@
     "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
     "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
     "us_east_1_ami": "ami-09b3691f",
-    "name": "aws-docker-ce-base",
-    "us_east_1_name": "aws-us-east-1-docker-ce-base",
+    "name": "test-docker-ce-base",
+    "us_east_1_name": "us-east-1-test-docker-ce-base",
     "ssh_username": "ubuntu"
   },
   "builders": [
@@ -19,7 +19,7 @@
       "source_ami": "{{user `us_east_1_ami`}}",
       "instance_type": "t2.micro",
       "ssh_username": "{{user `ssh_username`}}",
-      "ssh_timeout": "10m",
+      "ssh_timeout": "5m",
       "ami_name": "{{user `us_east_1_name`}} {{timestamp}}",
       "ami_description": "{{user `us_east_1_name`}} AMI",
       "run_tags": {
