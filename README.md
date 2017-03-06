@@ -38,7 +38,6 @@ terraform show
 ```bash
 # Returns AMI Image ID
 aws ec2 describe-images \
-  --owners 931066906971 \
   --filters --filters Name=tag-key,Values=ami Name=tag-value,Values=us-east-1-test-docker-ce-base \
   --query 'Images[*].{ID:ImageId}'
 
