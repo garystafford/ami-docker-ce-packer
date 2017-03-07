@@ -15,7 +15,7 @@ Installing Docker CE on an AWS AMI should not be confused with Docker’s also r
 ```bash
 source <your_aws_creds>.env
 
-packer build docker_ami.json
+packer build ubuntu-docker-ce-ami.json
 ```
 
 ### Terraform
@@ -38,7 +38,7 @@ terraform show
 ```bash
 # Returns AMI Image ID
 aws ec2 describe-images \
-  --filters Name=tag-key,Values=ami Name=tag-value,Values=us-east-1-test-docker-ce-base \
+  --filters Name=tag-key,Values=ami Name=tag-value,Values=ubuntu-xenial-docker-ce-base \
   --query 'Images[*].{ID:ImageId}'
 
 # Returns EC2 Image ID
