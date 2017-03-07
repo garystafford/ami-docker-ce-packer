@@ -1,8 +1,10 @@
 # Baking AWS AMI with new Docker CE Using Packer
 
-Files for the post, '[Baking AWS AMI with new Docker CE Using Packer Packer](http://programmaticponderings.com/2017/03/06/baking-aws-ami-with-new-docker-ce-using-packer)'.
+Files for the post, '[Baking AWS AMI with new Docker CE Using Packer Packer](https://programmaticponderings.com/2017/03/06/baking-aws-ami-with-new-docker-ce-using-packer/)'.
 
-In this post, I will demonstrate how to partially bake an existing Amazon Machine Image (Amazon AMI) with the new Docker CE, preparing it as a base for the creation of Amazon Elastic Compute Cloud (Amazon EC2) compute instances.
+Partially bake an existing Amazon Machine Image (Amazon AMI) with the new Docker CE, preparing it as a base for the creation of Amazon Elastic Compute Cloud (Amazon EC2) compute instances.
+
+Docker just announced the release of Docker Enterprise Edition (EE), a new version of the Docker platform optimized for business-critical deployments. As part of the release, Docker also renamed the free Docker products to Docker Community Edition (CE). Both products are adopting a new time-based versioning scheme for both Docker EE and CE. The initial release of Docker CE and EE, the 17.03 release, is the first to use the new scheme.
 
 Adding Docker and similar tooling to an AMI is referred to as partially baking an AMI, often referred to as a hybrid AMI. According to AWS, ‘_hybrid AMIs provide a subset of the software needed to produce a fully functional instance, falling in between the fully baked and JeOS (just enough operating system) options on the AMI design spectrum._’
 
