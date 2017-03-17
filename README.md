@@ -17,7 +17,7 @@ Installing Docker CE on an AWS AMI should not be confused with Docker’s also r
 ```bash
 source <your_aws_creds>.env
 
-packer build ubuntu-docker-ce-ami.json
+packer build ubuntu_docker_ce_ami.json.json
 ```
 
 ### Terraform

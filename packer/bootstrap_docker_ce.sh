@@ -27,3 +27,5 @@ sudo groupadd docker
 sudo usermod -aG docker ubuntu
 
 sudo systemctl enable docker
+
+docker --version
