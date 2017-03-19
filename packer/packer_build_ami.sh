@@ -9,4 +9,4 @@ echo "*** Provisioning Docker CE AMI ***"
 
 cd packer/
 
-packer build ubuntu_docker_ce_ami.json
+packer build -color=false ubuntu_docker_ce_ami.json
