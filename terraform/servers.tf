@@ -29,12 +29,6 @@ resource "aws_security_group" "test-docker-ce" {
 
 # test-docker-ce instance
 resource "aws_instance" "test-docker-ce" {
-  connection {
-    user        = "ubuntu"
-    private_key = "${file("~/.ssh/test-docker-ce")}"
-    timeout     = "${connection_timeout}"
-  }
-
   ami               = "${lookup(var.aws_amis_base, var.aws_region)}"
   instance_type     = "t2.nano"
   availability_zone = "us-east-1a"
